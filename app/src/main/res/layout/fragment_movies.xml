@@ -1,0 +1,652 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uday.playstore.Movies">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/tools">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="2dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:id="@+id/dp_linr"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="left">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="33dp"
+                                android:layout_height="33dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/cutedp"
+                                android:id="@+id/dpPic"/>
+                            <TextView
+                                android:id="@+id/dpName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_margin="9dp"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:text="Lalji Yadav"
+                                android:gravity="center_horizontal"
+                                />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            android:padding="15dp"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:src="@drawable/more"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txt_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Hi Good morning Frnds"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/upload_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_favorite_border_black_24dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_near_me_black_24dp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_bookmark_border_black_24dp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="10dp"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="Hi Frnd I m new User on Instagram"/>-->
+
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:id="@+id/dp_linr2"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="left">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="33dp"
+                                    android:layout_height="33dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/cutedp"
+                                    android:id="@+id/dpPic2"/>
+                                <TextView
+                                    android:id="@+id/dpName2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_margin="9dp"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="Lalji Yadav"
+                                    android:gravity="center_horizontal"
+                                    />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="right"
+                                android:padding="15dp"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:src="@drawable/more"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txt_post2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Hi Good morning Frnds"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/upload_pic2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_favorite_border_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_near_me_black_24dp"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="right"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:padding="10dp"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:text="Hi Frnd I m new User on Instagram"/>-->
+
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:id="@+id/dp_linr3"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="left">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="33dp"
+                                    android:layout_height="33dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/cutedp"
+                                    android:id="@+id/dpPic3"/>
+                                <TextView
+                                    android:id="@+id/dpName3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_margin="9dp"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="Lalji Yadav"
+                                    android:gravity="center_horizontal"
+                                    />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="right"
+                                android:padding="15dp"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:src="@drawable/more"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txt_post3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Hi Good morning Frnds"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/upload_pic3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_favorite_border_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_near_me_black_24dp"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="right"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:padding="10dp"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:text="Hi Frnd I m new User on Instagram"/>-->
+
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:id="@+id/dp_linr4"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="left">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="33dp"
+                                    android:layout_height="33dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/cutedp"
+                                    android:id="@+id/dpPic4"/>
+                                <TextView
+                                    android:id="@+id/dpName4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_margin="9dp"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="Lalji Yadav"
+                                    android:gravity="center_horizontal"
+                                    />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="right"
+                                android:padding="15dp"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:src="@drawable/more"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txt_post4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Hi Good morning Frnds"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/upload_pic4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_favorite_border_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_near_me_black_24dp"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="right"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:padding="10dp"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:text="Hi Frnd I m new User on Instagram"/>-->
+
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

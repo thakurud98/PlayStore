@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp"/>
+        <item
+            android:id="@+id/medical"
+            android:title="Medical"
+            android:icon="@drawable/doctor"/>
+        <item
+            android:id="@+id/engg"
+            android:title="Enigeering"
+            android:icon="@drawable/engineericon"/>
+        <item
+            android:id="@+id/mgmt"
+            android:title="Management"
+            android:icon="@drawable/professional_study"/>
+        <item
+            android:id="@+id/others"
+            android:title="Others"
+            android:icon="@drawable/diploma_study"/>
+        <item
+            android:id="@+id/exits"
+            android:title="Exits"
+            android:icon="@drawable/ic_arrow_back_black_24dp"/>
+    </group>
+</menu>

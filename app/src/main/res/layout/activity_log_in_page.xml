@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_in_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uday.playstore.LogInPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="1">
+            <ImageView
+                android:background="@drawable/mngt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:padding="5dp">
+            <EditText
+                android:hint="Email/Phone No"
+                android:layout_width="150dp"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <EditText
+                android:hint="Enter Your Password"
+                android:layout_width="150dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:layout_height="30dp" />
+        </LinearLayout>
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:text="LoG In"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"/>
+        </LinearLayout>
+
+        <!--for or option-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#4000"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="OR"
+                android:textSize="20sp"
+                android:gravity="center"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#4000"/>
+
+        </LinearLayout>
+
+        <!--for google signIn-->
+        <LinearLayout
+            android:id="@+id/activity_google_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.uday.playstore.GoogleSignIn">
+            <LinearLayout
+                android:id="@+id/llProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_logout_from_google"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn_revoke_access"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_revoke_access"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <!--for facebook signIn-->
+        <LinearLayout
+            android:id="@+id/activity_facebook_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

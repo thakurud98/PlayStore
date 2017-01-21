@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.uday.playstore.PrimaryFragment">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="0dp"
+        android:padding="0dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/card_explore"
+        android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="206dp"
+    android:onClick="explore"
+    >
+
+        <RelativeLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+    android:id="@+id/image_explore"
+    android:layout_width="match_parent"
+        android:layout_height="206dp"
+    android:background="#e74d3c"
+    />
+    <LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="EXPLORE"
+    android:textSize="40dp"
+    android:textColor="@color/white"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/card_search"
+    android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="206dp"
+    android:onClick="search">
+    <RelativeLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+    android:id="@+id/image_search"
+    android:layout_width="match_parent"
+        android:layout_height="206dp"
+    android:background="#2b3d4f"
+    />
+    <LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SEARCH"
+    android:textSize="40dp"
+    android:textColor="@color/white"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/card_finder"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+        android:layout_height="206dp">
+    <RelativeLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+    android:id="@+id/image_finder"
+    android:layout_width="match_parent"
+        android:layout_height="206dp"
+    android:background="#e74d3c"
+    />
+    <LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="FINDER"
+    android:textSize="40dp"
+    android:textColor="@color/white"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

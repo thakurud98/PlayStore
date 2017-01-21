@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp">
+
+    <!--try file instead of google nd fb login-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+    <!--for google signIn-->
+    <LinearLayout
+        android:id="@+id/activity_google_sign_in"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logout_from_google"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_revoke_access"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_revoke_access"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <!--for facebook signIn-->
+    <LinearLayout
+        android:id="@+id/activity_facebook_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/info"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:textSize="18sp"-->
+        <!--/>-->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <!--for google signIn-->
+    <LinearLayout
+        android:id="@+id/activity_google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        tools:context="com.uday.playstore.GoogleSignIn">
+        <LinearLayout
+            android:id="@+id/llProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logout_from_google"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_revoke_access"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_revoke_access"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <!--for facebook signIn-->
+    <LinearLayout
+        android:id="@+id/activity_facebook_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/info"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:textSize="18sp"-->
+        <!--/>-->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "646768727725",
+    "project_id": "play-store-2af0d"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646768727725:android:1e45a7768ba55def",
+        "android_client_info": {
+          "package_name": "com.uday.playstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646768727725-02aon2v7drnkl2ekglc7e34hq1a554nu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uday.playstore",
+            "certificate_hash": "28D8E69032BD1D76755104D988B05422BF922778"
+          }
+        },
+        {
+          "client_id": "646768727725-83eml24o78tj6hkkmhdot02te9u3nd4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTOChBHnBFhxmmN8LED1oGKIpoHt4sNgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
